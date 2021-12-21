@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:inft2051_ass2"
+             x:Class="inft2051_ass2.MainPage"
+             BackgroundImage="@drawable/Backimage"
+             NavigationPage.HasNavigationBar="False"
+             >
+
+    <StackLayout 
+        HorizontalOptions = "LayoutOptions.Center"
+        VerticalOptions = "LayoutOptions.Center">
+        <!-- Place new controls here -->
+        <Label Text="WELCOME E-Trip" FontSize="Large"/>
+        <Label Text="Find the attraction you are looking for" FontSize="Micro"/>
+        <AbsoluteLayout HorizontalOptions = "LayoutOptions.Center">
+            <Button Text="where to go?"
+                x:Name="button"
+                Clicked="Button_ClickedAsync"/>
+        </AbsoluteLayout>
+    </StackLayout>
+
+</ContentPage>

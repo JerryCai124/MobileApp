@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="inft2051_ass2.AttractionPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout x:Name="layout" Spacing="5">
+                
+                <Image x:Name="img1"
+                       HeightRequest="200"
+                                   WidthRequest="300"/>
+                <Label x:Name="name" TextColor="Black" FontSize="Large"
+                       HorizontalOptions="Center"
+                       VerticalOptions="CenterAndExpand"/>
+
+                <Label Text="Introduction:" TextColor="Black" FontSize="Medium"/>
+                <Label  x:Name="introduction"/>
+               
+
+                <Button Text="Get Dirction" Clicked="Button_Clicked"/>
+            </StackLayout>
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>

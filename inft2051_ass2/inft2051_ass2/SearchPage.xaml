@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="inft2051_ass2.SearchPage">
+    <ContentPage.Content>
+        <StackLayout >
+            <Entry BackgroundColor="#F0F0F0"
+                   HorizontalOptions = "Fill"
+                   x:Name="selection"/>
+            <Button Text="Search"
+                    Clicked="Search"
+                    HorizontalOptions = "End" 
+                   />
+            <Label Text="Popular Cities" FontSize="Medium"/>
+            <AbsoluteLayout>
+                
+                <ListView x:Name="listView" 
+                 ItemSelected="OnListViewItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding Name}" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </AbsoluteLayout>
+            <!-- Place new controls here -->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
